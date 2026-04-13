@@ -330,6 +330,185 @@ SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
 
 ---
 
+## Business Model & Monetization
+
+### Revenue Streams
+
+#### 1. Freemium Subscription (Primary Revenue)
+
+| Tier | Price | Features |
+|---|---|---|
+| **Free** | 0 | Basic screen time tracking, 5 daily log entries, limited rewards catalog, public leaderboard |
+| **NomoLux Plus** | 4.99/month or 39.99/year | Unlimited tracking, full rewards catalog, friend challenges, detailed analytics, priority reward access |
+| **NomoLux Family** | 9.99/month or 79.99/year | Up to 5 family members, parental dashboard, family challenges, shared rewards wallet |
+
+**Conversion assumption**: 5-8% free-to-paid conversion rate (industry average for wellness apps is 4-10%)
+
+#### 2. Partner Commissions (Luxembourg Local Business Network)
+
+| Partner Type | Commission Model | Est. Revenue Per Transaction |
+|---|---|---|
+| Restaurants | 10-15% per voucher redeemed | 3-8 |
+| Retail/Shopping | 8-12% per gift card sold | 2-10 |
+| Events/Culture | 5-10% per ticket sold | 2-15 |
+| Cash-back partners | 2-5% affiliate commission | 0.50-3 |
+
+**Target**: 20-50 local Luxembourg partners in Year 1, growing to 100+ by Year 2.
+Partner onboarding fee: 200 one-time setup + revenue share.
+
+#### 3. Institutional/B2B Licensing
+
+| Client | Pricing | Description |
+|---|---|---|
+| **Schools** | 500-2,000/year per school | Educator dashboard, class leaderboards, student wellness reports |
+| **Employers** | 2-5/employee/month | Corporate wellness program integration, team challenges |
+| **Municipalities** | 5,000-15,000/year | City-wide digital wellness initiatives, public leaderboards |
+
+Luxembourg has ~180 schools (secondary/lycees) and ~4,000 employers. Even 5% penetration = meaningful B2B revenue.
+
+#### 4. Sponsored Challenges & Brand Partnerships
+
+- Brands sponsor challenges (e.g., "POST Luxembourg Digital Detox Week")
+- Sponsored rewards slots in the catalog (featured placement)
+- Co-branded campaigns with telecom providers (POST, Tango, Orange Luxembourg)
+- **Pricing**: 1,000-10,000 per campaign depending on reach
+
+#### 5. Data Insights (Anonymized & Aggregated)
+
+- Sell anonymized, aggregated digital wellness trend reports to:
+  - Government health agencies (Ministry of Health)
+  - Research institutions (University of Luxembourg)
+  - NGOs focused on digital wellness
+- **No individual data shared** - only aggregate trends
+- **Pricing**: 5,000-20,000 per annual report/dataset
+
+---
+
+## Financial Projections & Break-Even Analysis
+
+### Cost Structure (Monthly)
+
+| Cost Item | Month 1-6 | Month 7-12 | Year 2 |
+|---|---|---|---|
+| Supabase (DB + Auth) | 25 | 75 | 150 |
+| Vercel hosting | 20 | 50 | 100 |
+| Domain + SSL | 5 | 5 | 5 |
+| Email service (Resend) | 0 | 20 | 50 |
+| Marketing/Ads | 500 | 1,500 | 3,000 |
+| Partner acquisition | 200 | 500 | 500 |
+| Customer support | 0 | 500 | 1,500 |
+| Development/Maintenance | 2,000 | 2,000 | 3,000 |
+| Legal/Compliance (GDPR) | 200 | 100 | 100 |
+| **Total Monthly Costs** | **2,950** | **4,750** | **8,405** |
+
+### Revenue Model by User Count
+
+**Assumptions:**
+- Luxembourg population: ~660,000 (target demographic 12-35: ~180,000)
+- Free-to-paid conversion: 6%
+- Average partner commission: 5 per redemption
+- Average redemptions per paying user: 1.5/month
+- B2B revenue starts Month 9
+
+#### Scenario: User Growth & Revenue
+
+| Users (Total) | Paying Users (6%) | Subscription Rev/mo | Partner Commissions/mo | B2B Rev/mo | Total Rev/mo | Monthly Costs | Net/mo |
+|---|---|---|---|---|---|---|---|
+| **500** | 30 | 150 | 75 | 0 | 225 | 2,950 | -2,725 |
+| **1,000** | 60 | 300 | 150 | 0 | 450 | 3,200 | -2,750 |
+| **2,500** | 150 | 750 | 563 | 0 | 1,313 | 3,800 | -2,488 |
+| **5,000** | 300 | 1,500 | 1,125 | 1,000 | 3,625 | 4,750 | -1,125 |
+| **8,000** | 480 | 2,400 | 1,800 | 2,500 | 6,700 | 5,500 | **+1,200** |
+| **10,000** | 600 | 3,000 | 2,250 | 3,500 | 8,750 | 6,000 | **+2,750** |
+| **15,000** | 900 | 4,500 | 3,375 | 5,000 | 12,875 | 7,000 | **+5,875** |
+| **25,000** | 1,500 | 7,500 | 5,625 | 8,000 | 21,125 | 8,405 | **+12,720** |
+| **50,000** | 3,000 | 15,000 | 11,250 | 12,000 | 38,250 | 12,000 | **+26,250** |
+
+### Break-Even Analysis
+
+```
+BREAK-EVEN POINT: ~7,000-8,000 total users
+                   (~420-480 paying subscribers)
+
+Timeline to break-even (realistic growth scenario):
+  Month 1-3:   Beta launch, 200-500 users (word of mouth, schools pilot)
+  Month 4-6:   Marketing push, 500-2,000 users
+  Month 7-9:   Partner network live, 2,000-4,000 users
+  Month 10-12: B2B contracts start, 4,000-6,000 users
+  Month 13-16: BREAK-EVEN at ~7,500 users
+  Month 18:    10,000 users, profitable at ~2,750/month
+  Month 24:    20,000-25,000 users, ~10,000/month profit
+
+TOTAL INVESTMENT TO BREAK-EVEN: ~55,000-65,000
+```
+
+### Revenue Composition at Scale (25,000 users)
+
+```
+Subscriptions:     7,500/mo   (36%)  ████████████
+Partner Revenue:   5,625/mo   (27%)  █████████
+B2B Licensing:     8,000/mo   (38%)  ████████████▌
+Sponsored:         variable          (bonus)
+                   ─────────
+Total:            21,125/mo   (100%)
+
+Annual Revenue:   ~253,000
+Annual Costs:     ~101,000
+Annual Profit:    ~152,000
+```
+
+### Luxembourg Market Opportunity
+
+| Metric | Value |
+|---|---|
+| Total population | ~660,000 |
+| Target demographic (12-35) | ~180,000 |
+| Realistic addressable market (digital natives with smartphones) | ~150,000 |
+| Conservative penetration (Year 1) | 3-5% = 4,500-7,500 users |
+| Moderate penetration (Year 2) | 8-15% = 12,000-22,500 users |
+| Ambitious penetration (Year 3) | 15-25% = 22,500-37,500 users |
+
+Luxembourg advantages:
+- **Small, dense market**: Easy to saturate with targeted marketing
+- **High smartphone penetration**: 95%+ in target demographic
+- **Wealthy population**: High willingness to pay for premium services
+- **Multilingual**: App supports all 4 official/common languages
+- **Strong school system**: Direct channel to youth via ~180 secondary schools
+- **Local pride**: "Made in Luxembourg" resonates with local market
+
+### Key Metrics to Track (KPIs)
+
+| Metric | Target (Month 6) | Target (Month 12) | Target (Month 24) |
+|---|---|---|---|
+| Total registered users | 2,000 | 6,000 | 25,000 |
+| Monthly Active Users (MAU) | 1,200 | 4,000 | 18,000 |
+| Paid subscribers | 120 | 360 | 1,500 |
+| Free-to-paid conversion | 6% | 6% | 6% |
+| Monthly churn rate | <8% | <5% | <4% |
+| Partner businesses | 10 | 30 | 80 |
+| B2B contracts | 0 | 5 | 20 |
+| Avg. Moments earned/user/day | 50 | 75 | 100 |
+| Avg. daily screen time reduction | 15 min | 25 min | 35 min |
+| NPS Score | 30+ | 40+ | 50+ |
+
+### Funding Requirements
+
+| Phase | Amount | Purpose |
+|---|---|---|
+| **Pre-seed (Month 0-3)** | 15,000 | MVP development, legal setup, initial marketing |
+| **Seed (Month 4-9)** | 30,000 | Marketing campaigns, partner acquisition, first hire |
+| **Growth (Month 10-18)** | 20,000 | Scale marketing, B2B sales, native app development |
+| **Total to profitability** | **65,000** | Covers runway until ~Month 16 break-even |
+
+Luxembourg-specific funding sources:
+- **Fit4Start** accelerator (up to 150,000 + coaching)
+- **Luxembourg National Research Fund (FNR)** grants
+- **Luxinnovation** support programs
+- **Digital Luxembourg** initiative alignment
+- **Banque de Luxembourg** startup programs
+
+---
+
 ## Future Enhancements (Post-MVP)
 - Native mobile app (React Native) with OS screen time API integration
 - Push notifications for challenges and streaks
